@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>231288185202-b6sbnv8bjastf6bdlcm92rv88tvuqn90.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.231288185202-b6sbnv8bjastf6bdlcm92rv88tvuqn90</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBTf_DfGEwVxeJHoi25ttn7QN-4V7h_bYI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>231288185202</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>yutayamamoto.Test4</string>
+	<key>PROJECT_ID</key>
+	<string>test4-869ce</string>
+	<key>STORAGE_BUCKET</key>
+	<string>test4-869ce.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:231288185202:ios:9c7176cc72304cc860bdeb</string>
+	<key>DATABASE_URL</key>
+	<string>https://test4-869ce.firebaseio.com</string>
+</dict>
+</plist>

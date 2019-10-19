@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		03D377BF235AD618008759E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D377BD235AD618008759E0 /* Main.storyboard */; };
 		03D377C1235AD61B008759E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D377C0235AD61B008759E0 /* Assets.xcassets */; };
 		03D377C4235AD61B008759E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D377C2235AD61B008759E0 /* LaunchScreen.storyboard */; };
+		03D377D8235AFBAE008759E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03D377D7235AFBAE008759E0 /* GoogleService-Info.plist */; };
 		B2ED5017E14858AC01864AF3 /* Pods_Test4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CBDC153496D9BA620E24DC /* Pods_Test4.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		03D377C0235AD61B008759E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03D377C3235AD61B008759E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03D377C5235AD61B008759E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03D377D7235AFBAE008759E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4738F73DDD6D7AF7903841CC /* Pods-Test4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test4.debug.xcconfig"; path = "Target Support Files/Pods-Test4/Pods-Test4.debug.xcconfig"; sourceTree = "<group>"; };
 		D7CBDC153496D9BA620E24DC /* Pods_Test4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E918870B48680B3F01894297 /* Pods-Test4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test4.release.xcconfig"; path = "Target Support Files/Pods-Test4/Pods-Test4.release.xcconfig"; sourceTree = "<group>"; };
@@ -63,15 +65,56 @@
 		03D377B6235AD618008759E0 /* Test4 */ = {
 			isa = PBXGroup;
 			children = (
+				03DFADB9235AFD4C00D891AC /* src */,
+				03D377DB235AFC67008759E0 /* SupportingFiles */,
 				03D377B7235AD618008759E0 /* AppDelegate.swift */,
 				03D377B9235AD618008759E0 /* SceneDelegate.swift */,
-				03D377BB235AD618008759E0 /* ViewController.swift */,
-				03D377BD235AD618008759E0 /* Main.storyboard */,
 				03D377C0235AD61B008759E0 /* Assets.xcassets */,
-				03D377C2235AD61B008759E0 /* LaunchScreen.storyboard */,
 				03D377C5235AD61B008759E0 /* Info.plist */,
 			);
 			path = Test4;
+			sourceTree = "<group>";
+		};
+		03D377DB235AFC67008759E0 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				03D377D7235AFBAE008759E0 /* GoogleService-Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		03DFADB9235AFD4C00D891AC /* src */ = {
+			isa = PBXGroup;
+			children = (
+				03DFADBA235AFD6500D891AC /* Views */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		03DFADBA235AFD6500D891AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				03DFADBC235AFDDE00D891AC /* Launch */,
+				03DFADBB235AFDD600D891AC /* AppTop */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		03DFADBB235AFDD600D891AC /* AppTop */ = {
+			isa = PBXGroup;
+			children = (
+				03D377BD235AD618008759E0 /* Main.storyboard */,
+				03D377BB235AD618008759E0 /* ViewController.swift */,
+			);
+			path = AppTop;
+			sourceTree = "<group>";
+		};
+		03DFADBC235AFDDE00D891AC /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				03D377C2235AD61B008759E0 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
 			sourceTree = "<group>";
 		};
 		9827DDFCE97AC8F74506AE8B /* Frameworks */ = {
@@ -88,7 +131,6 @@
 				4738F73DDD6D7AF7903841CC /* Pods-Test4.debug.xcconfig */,
 				E918870B48680B3F01894297 /* Pods-Test4.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -153,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03D377C4235AD61B008759E0 /* LaunchScreen.storyboard in Resources */,
+				03D377D8235AFBAE008759E0 /* GoogleService-Info.plist in Resources */,
 				03D377C1235AD61B008759E0 /* Assets.xcassets in Resources */,
 				03D377BF235AD618008759E0 /* Main.storyboard in Resources */,
 			);
