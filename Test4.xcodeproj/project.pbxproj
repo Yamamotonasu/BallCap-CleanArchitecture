@@ -14,8 +14,34 @@
 		03D377C1235AD61B008759E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D377C0235AD61B008759E0 /* Assets.xcassets */; };
 		03D377C4235AD61B008759E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D377C2235AD61B008759E0 /* LaunchScreen.storyboard */; };
 		03D377D8235AFBAE008759E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03D377D7235AFBAE008759E0 /* GoogleService-Info.plist */; };
+		03DFADBE235B053C00D891AC /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFADBD235B053C00D891AC /* RxSwift.framework */; };
+		03DFADBF235B053C00D891AC /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFADBD235B053C00D891AC /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		03DFADC2235B054D00D891AC /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFADC1235B054D00D891AC /* RxCocoa.framework */; };
+		03DFADC3235B054D00D891AC /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFADC1235B054D00D891AC /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		03DFADC5235B055B00D891AC /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFADC4235B055B00D891AC /* RxRelay.framework */; };
+		03DFADC6235B055B00D891AC /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFADC4235B055B00D891AC /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		03DFADCA235B070100D891AC /* UIViewController+Extended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DFADC9235B070100D891AC /* UIViewController+Extended.swift */; };
+		03DFADCC235B117900D891AC /* NSObject_Rx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFADCB235B117900D891AC /* NSObject_Rx.framework */; };
+		03DFADCD235B117900D891AC /* NSObject_Rx.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFADCB235B117900D891AC /* NSObject_Rx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B2ED5017E14858AC01864AF3 /* Pods_Test4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CBDC153496D9BA620E24DC /* Pods_Test4.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		03DFADC0235B053C00D891AC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				03DFADC3235B054D00D891AC /* RxCocoa.framework in Embed Frameworks */,
+				03DFADBF235B053C00D891AC /* RxSwift.framework in Embed Frameworks */,
+				03DFADCD235B117900D891AC /* NSObject_Rx.framework in Embed Frameworks */,
+				03DFADC6235B055B00D891AC /* RxRelay.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		03D377B4235AD618008759E0 /* Test4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test4.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,6 +53,11 @@
 		03D377C3235AD61B008759E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03D377C5235AD61B008759E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03D377D7235AFBAE008759E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		03DFADBD235B053C00D891AC /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		03DFADC1235B054D00D891AC /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		03DFADC4235B055B00D891AC /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
+		03DFADC9235B070100D891AC /* UIViewController+Extended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extended.swift"; sourceTree = "<group>"; };
+		03DFADCB235B117900D891AC /* NSObject_Rx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NSObject_Rx.framework; path = Carthage/Build/iOS/NSObject_Rx.framework; sourceTree = "<group>"; };
 		4738F73DDD6D7AF7903841CC /* Pods-Test4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test4.debug.xcconfig"; path = "Target Support Files/Pods-Test4/Pods-Test4.debug.xcconfig"; sourceTree = "<group>"; };
 		D7CBDC153496D9BA620E24DC /* Pods_Test4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E918870B48680B3F01894297 /* Pods-Test4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test4.release.xcconfig"; path = "Target Support Files/Pods-Test4/Pods-Test4.release.xcconfig"; sourceTree = "<group>"; };
@@ -37,7 +68,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03DFADC5235B055B00D891AC /* RxRelay.framework in Frameworks */,
+				03DFADC2235B054D00D891AC /* RxCocoa.framework in Frameworks */,
+				03DFADBE235B053C00D891AC /* RxSwift.framework in Frameworks */,
 				B2ED5017E14858AC01864AF3 /* Pods_Test4.framework in Frameworks */,
+				03DFADCC235B117900D891AC /* NSObject_Rx.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +121,7 @@
 		03DFADB9235AFD4C00D891AC /* src */ = {
 			isa = PBXGroup;
 			children = (
+				03DFADC8235B06E900D891AC /* Extensions */,
 				03DFADBA235AFD6500D891AC /* Views */,
 			);
 			path = src;
@@ -117,9 +153,21 @@
 			path = Launch;
 			sourceTree = "<group>";
 		};
+		03DFADC8235B06E900D891AC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				03DFADC9235B070100D891AC /* UIViewController+Extended.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		9827DDFCE97AC8F74506AE8B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				03DFADCB235B117900D891AC /* NSObject_Rx.framework */,
+				03DFADC4235B055B00D891AC /* RxRelay.framework */,
+				03DFADC1235B054D00D891AC /* RxCocoa.framework */,
+				03DFADBD235B053C00D891AC /* RxSwift.framework */,
 				D7CBDC153496D9BA620E24DC /* Pods_Test4.framework */,
 			);
 			name = Frameworks;
@@ -146,6 +194,8 @@
 				03D377B1235AD618008759E0 /* Frameworks */,
 				03D377B2235AD618008759E0 /* Resources */,
 				6D5A0D2F1A957C688A327D5E /* [CP] Embed Pods Frameworks */,
+				03DFADC0235B053C00D891AC /* Embed Frameworks */,
+				03DFADC7235B060900D891AC /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -204,6 +254,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		03DFADC7235B060900D891AC /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/NSObject_Rx.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
 		6D5A0D2F1A957C688A327D5E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -253,6 +325,7 @@
 				03D377BC235AD618008759E0 /* ViewController.swift in Sources */,
 				03D377B8235AD618008759E0 /* AppDelegate.swift in Sources */,
 				03D377BA235AD618008759E0 /* SceneDelegate.swift in Sources */,
+				03DFADCA235B070100D891AC /* UIViewController+Extended.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +472,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QJA2WU2RRL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Test4/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -418,6 +495,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QJA2WU2RRL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Test4/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
