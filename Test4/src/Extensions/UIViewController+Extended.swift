@@ -11,5 +11,4 @@ import RxSwift
 import NSObject_Rx
 
 extension UIViewController {
-
 }

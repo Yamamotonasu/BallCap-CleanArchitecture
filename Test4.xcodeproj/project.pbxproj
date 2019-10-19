@@ -23,6 +23,7 @@
 		03DFADCA235B070100D891AC /* UIViewController+Extended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DFADC9235B070100D891AC /* UIViewController+Extended.swift */; };
 		03DFADCC235B117900D891AC /* NSObject_Rx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFADCB235B117900D891AC /* NSObject_Rx.framework */; };
 		03DFADCD235B117900D891AC /* NSObject_Rx.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFADCB235B117900D891AC /* NSObject_Rx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		03DFADD8235B711900D891AC /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DFADD7235B711900D891AC /* R.generated.swift */; };
 		B2ED5017E14858AC01864AF3 /* Pods_Test4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CBDC153496D9BA620E24DC /* Pods_Test4.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		03DFADC4235B055B00D891AC /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
 		03DFADC9235B070100D891AC /* UIViewController+Extended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extended.swift"; sourceTree = "<group>"; };
 		03DFADCB235B117900D891AC /* NSObject_Rx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NSObject_Rx.framework; path = Carthage/Build/iOS/NSObject_Rx.framework; sourceTree = "<group>"; };
+		03DFADD7235B711900D891AC /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		4738F73DDD6D7AF7903841CC /* Pods-Test4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test4.debug.xcconfig"; path = "Target Support Files/Pods-Test4/Pods-Test4.debug.xcconfig"; sourceTree = "<group>"; };
 		D7CBDC153496D9BA620E24DC /* Pods_Test4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E918870B48680B3F01894297 /* Pods-Test4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test4.release.xcconfig"; path = "Target Support Files/Pods-Test4/Pods-Test4.release.xcconfig"; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				03D377DB235AFC67008759E0 /* SupportingFiles */,
 				03D377B7235AD618008759E0 /* AppDelegate.swift */,
 				03D377B9235AD618008759E0 /* SceneDelegate.swift */,
+				03DFADD7235B711900D891AC /* R.generated.swift */,
 				03D377C0235AD61B008759E0 /* Assets.xcassets */,
 				03D377C5235AD61B008759E0 /* Info.plist */,
 			);
@@ -190,6 +193,7 @@
 			buildConfigurationList = 03D377C8235AD61B008759E0 /* Build configuration list for PBXNativeTarget "Test4" */;
 			buildPhases = (
 				A3C8568A64852E58F17CA7A8 /* [CP] Check Pods Manifest.lock */,
+				03DFADCE235B657700D891AC /* R.swift */,
 				03D377B0235AD618008759E0 /* Sources */,
 				03D377B1235AD618008759E0 /* Frameworks */,
 				03D377B2235AD618008759E0 /* Resources */,
@@ -276,6 +280,26 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
+		03DFADCE235B657700D891AC /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		6D5A0D2F1A957C688A327D5E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -324,6 +348,7 @@
 			files = (
 				03D377BC235AD618008759E0 /* ViewController.swift in Sources */,
 				03D377B8235AD618008759E0 /* AppDelegate.swift in Sources */,
+				03DFADD8235B711900D891AC /* R.generated.swift in Sources */,
 				03D377BA235AD618008759E0 /* SceneDelegate.swift in Sources */,
 				03DFADCA235B070100D891AC /* UIViewController+Extended.swift in Sources */,
 			);

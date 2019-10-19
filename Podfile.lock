@@ -119,12 +119,16 @@ PODS:
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
   - Protobuf (3.10.0)
+  - R.swift (5.0.3):
+    - R.swift.Library (~> 5.0.0)
+  - R.swift.Library (5.0.1)
 
 DEPENDENCIES:
   - Ballcap
   - Firebase/Core
   - Firebase/Firestore
   - Firebase/Storage
+  - R.swift (~> 5.0.0)
 
 SPEC REPOS:
   trunk:
@@ -149,6 +153,8 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - Protobuf
+    - R.swift
+    - R.swift.Library
 
 SPEC CHECKSUMS:
   Ballcap: 4fb84b96ce837e05c764d342759ce3ef05777691
@@ -172,7 +178,9 @@ SPEC CHECKSUMS:
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: a4dc852ad69c027ca2166ed287b856697814375b
+  R.swift: f5a87643b91ea569d23d6afb3eee9c743edde239
+  R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
 
-PODFILE CHECKSUM: 086035b5a009fa7807565993cf5f8d7a552e576b
+PODFILE CHECKSUM: 0dba88a76b745bae7a01828528104c76bffa0698
 
 COCOAPODS: 1.8.4
