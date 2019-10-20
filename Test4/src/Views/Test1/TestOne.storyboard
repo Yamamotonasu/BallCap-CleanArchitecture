@@ -28,11 +28,26 @@
                                     <action selector="testButton:" destination="nIO-eU-6dQ" eventType="touchUpInside" id="tFQ-bZ-Xha"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nt5-PG-LWC">
+                                <rect key="frame" x="20" y="218" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YrT-Q3-L9v"/>
+                                </constraints>
+                                <state key="normal" title="document.get()">
+                                    <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapGetDocument:" destination="3K1-Z2-pBn" eventType="touchUpInside" id="Jwt-7G-hZV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="s4T-dU-V6L" firstAttribute="top" secondItem="2xE-GL-TLN" secondAttribute="top" constant="50" id="B0J-uT-MGD"/>
+                            <constraint firstItem="nt5-PG-LWC" firstAttribute="top" secondItem="s4T-dU-V6L" secondAttribute="bottom" constant="30" id="Qoq-b2-Kqb"/>
+                            <constraint firstItem="2xE-GL-TLN" firstAttribute="trailing" secondItem="nt5-PG-LWC" secondAttribute="trailing" constant="20" id="W6c-f0-S8h"/>
                             <constraint firstItem="s4T-dU-V6L" firstAttribute="leading" secondItem="2xE-GL-TLN" secondAttribute="leading" constant="20" id="WIs-Uh-ezF"/>
+                            <constraint firstItem="nt5-PG-LWC" firstAttribute="leading" secondItem="2xE-GL-TLN" secondAttribute="leading" constant="20" id="ZuQ-Hx-wb0"/>
                             <constraint firstItem="2xE-GL-TLN" firstAttribute="trailing" secondItem="s4T-dU-V6L" secondAttribute="trailing" constant="20" id="hrV-rW-ED0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2xE-GL-TLN"/>

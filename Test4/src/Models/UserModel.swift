@@ -9,8 +9,11 @@
 import Ballcap
 
 struct User: Codable, Equatable, Modelable {
+    
+    var userId: String = UserData.getUserId()
     var number: Int = 0
     var string: String = "Ballcap"
     var createdAt: ServerTimestamp?
     var updatedAt: ServerTimestamp?
+
 }

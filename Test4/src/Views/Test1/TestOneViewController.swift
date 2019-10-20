@@ -16,7 +16,7 @@ class TestOneViewController: UIViewController {
     
     @IBOutlet weak var testButton: UIButton!
 
-    let document: Document<User> = Document()
+    let userDocument: Document<User> = Document()
     
     /**
      *  document.data?.number -> Optional<Int>
@@ -25,7 +25,7 @@ class TestOneViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        subscribeUI()
+        UserData.getUserId()
     }
     
     private func subscribeUI() {
@@ -37,9 +37,12 @@ class TestOneViewController: UIViewController {
     
     
     @IBAction func tapButton(_ sender: Any) {
-        document.save()
+        userDocument.save()
     }
     
+    @IBAction func tapGetDocument(_ sender: Any) {
+        userDocument.get()
+    }
     
     
 
