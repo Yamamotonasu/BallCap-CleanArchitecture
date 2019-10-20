@@ -29,6 +29,7 @@
 		03DFADDD235C0F8000D891AC /* FontAwesome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFADDC235C0F8000D891AC /* FontAwesome.framework */; };
 		03DFADDE235C0F8000D891AC /* FontAwesome.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFADDC235C0F8000D891AC /* FontAwesome.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		03DFADE1235C103C00D891AC /* TabItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DFADE0235C103C00D891AC /* TabItems.swift */; };
+		03DFADE7235C123700D891AC /* TabAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DFADE6235C123700D891AC /* TabAnimations.swift */; };
 		B2ED5017E14858AC01864AF3 /* Pods_Test4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CBDC153496D9BA620E24DC /* Pods_Test4.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,7 @@
 		03DFADD9235C0F7000D891AC /* TransitionableTab.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TransitionableTab.framework; path = Carthage/Build/iOS/TransitionableTab.framework; sourceTree = "<group>"; };
 		03DFADDC235C0F8000D891AC /* FontAwesome.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FontAwesome.framework; path = Carthage/Build/iOS/FontAwesome.framework; sourceTree = "<group>"; };
 		03DFADE0235C103C00D891AC /* TabItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItems.swift; sourceTree = "<group>"; };
+		03DFADE6235C123700D891AC /* TabAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabAnimations.swift; sourceTree = "<group>"; };
 		4738F73DDD6D7AF7903841CC /* Pods-Test4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test4.debug.xcconfig"; path = "Target Support Files/Pods-Test4/Pods-Test4.debug.xcconfig"; sourceTree = "<group>"; };
 		D7CBDC153496D9BA620E24DC /* Pods_Test4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E918870B48680B3F01894297 /* Pods-Test4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test4.release.xcconfig"; path = "Target Support Files/Pods-Test4/Pods-Test4.release.xcconfig"; sourceTree = "<group>"; };
@@ -183,7 +185,7 @@
 		03DFADDF235C102500D891AC /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				03DFADE0235C103C00D891AC /* TabItems.swift */,
+				03DFADE5235C120200D891AC /* Util */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -207,6 +209,15 @@
 			children = (
 			);
 			path = Test3;
+			sourceTree = "<group>";
+		};
+		03DFADE5235C120200D891AC /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				03DFADE0235C103C00D891AC /* TabItems.swift */,
+				03DFADE6235C123700D891AC /* TabAnimations.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		9827DDFCE97AC8F74506AE8B /* Frameworks */ = {
@@ -398,6 +409,7 @@
 				03D377BC235AD618008759E0 /* ViewController.swift in Sources */,
 				03D377B8235AD618008759E0 /* AppDelegate.swift in Sources */,
 				03DFADD8235B711900D891AC /* R.generated.swift in Sources */,
+				03DFADE7235C123700D891AC /* TabAnimations.swift in Sources */,
 				03D377BA235AD618008759E0 /* SceneDelegate.swift in Sources */,
 				03DFADE1235C103C00D891AC /* TabItems.swift in Sources */,
 				03DFADCA235B070100D891AC /* UIViewController+Extended.swift in Sources */,
