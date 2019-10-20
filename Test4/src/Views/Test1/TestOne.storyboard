@@ -7,19 +7,43 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Test One View Controller-->
         <scene sceneID="oQM-dF-1KL">
             <objects>
-                <viewController storyboardIdentifier="testOne" id="3K1-Z2-pBn" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="testOne" id="3K1-Z2-pBn" customClass="TestOneViewController" customModule="Test4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MIR-Ko-GAg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4T-dU-V6L">
+                                <rect key="frame" x="20" y="138" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="rd4-2X-gcn"/>
+                                </constraints>
+                                <state key="normal" title="document.save()">
+                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapButton:" destination="3K1-Z2-pBn" eventType="touchUpInside" id="mAB-R6-MGN"/>
+                                    <action selector="testButton:" destination="nIO-eU-6dQ" eventType="touchUpInside" id="tFQ-bZ-Xha"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="s4T-dU-V6L" firstAttribute="top" secondItem="2xE-GL-TLN" secondAttribute="top" constant="50" id="B0J-uT-MGD"/>
+                            <constraint firstItem="s4T-dU-V6L" firstAttribute="leading" secondItem="2xE-GL-TLN" secondAttribute="leading" constant="20" id="WIs-Uh-ezF"/>
+                            <constraint firstItem="2xE-GL-TLN" firstAttribute="trailing" secondItem="s4T-dU-V6L" secondAttribute="trailing" constant="20" id="hrV-rW-ED0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2xE-GL-TLN"/>
                     </view>
                     <navigationItem key="navigationItem" id="5ga-4H-vPV"/>
+                    <connections>
+                        <outlet property="testButton" destination="s4T-dU-V6L" id="I8l-sF-Lyn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f9I-Ho-EW8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="nIO-eU-6dQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1002.8985507246377" y="100.44642857142857"/>
         </scene>

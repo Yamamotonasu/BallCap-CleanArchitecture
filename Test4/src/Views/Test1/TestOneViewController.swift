@@ -7,11 +7,40 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
+import Ballcap
 
 class TestOneViewController: UIViewController {
+    
+    
+    @IBOutlet weak var testButton: UIButton!
+
+    let document: Document<User> = Document()
+    
+    /**
+     *  document.data?.number -> Optional<Int>
+     *  document[\.number] -> Int
+     */
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        subscribeUI()
     }
+    
+    private func subscribeUI() {
+        testButton.rx.tap.subscribe(onNext: { [unowned self] in
+            print("")
+        }).disposed(by: rx.disposeBag)
+    }
+    
+    
+    
+    @IBAction func tapButton(_ sender: Any) {
+        document.save()
+    }
+    
+    
+    
 
 }

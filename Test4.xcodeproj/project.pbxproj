@@ -38,6 +38,7 @@
 		03DFADF7235C15D000D891AC /* TestThree.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DFADF6235C15D000D891AC /* TestThree.storyboard */; };
 		03DFADF9235C160800D891AC /* TestThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DFADF8235C160800D891AC /* TestThreeViewController.swift */; };
 		03DFADFB235C1CAF00D891AC /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DFADFA235C1CAF00D891AC /* Transition.swift */; };
+		03DFADFE235C4C7300D891AC /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DFADFD235C4C7300D891AC /* UserModel.swift */; };
 		B2ED5017E14858AC01864AF3 /* Pods_Test4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CBDC153496D9BA620E24DC /* Pods_Test4.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +89,7 @@
 		03DFADF6235C15D000D891AC /* TestThree.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestThree.storyboard; sourceTree = "<group>"; };
 		03DFADF8235C160800D891AC /* TestThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestThreeViewController.swift; sourceTree = "<group>"; };
 		03DFADFA235C1CAF00D891AC /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		03DFADFD235C4C7300D891AC /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		4738F73DDD6D7AF7903841CC /* Pods-Test4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test4.debug.xcconfig"; path = "Target Support Files/Pods-Test4/Pods-Test4.debug.xcconfig"; sourceTree = "<group>"; };
 		D7CBDC153496D9BA620E24DC /* Pods_Test4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E918870B48680B3F01894297 /* Pods-Test4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test4.release.xcconfig"; path = "Target Support Files/Pods-Test4/Pods-Test4.release.xcconfig"; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 		03DFADB9235AFD4C00D891AC /* src */ = {
 			isa = PBXGroup;
 			children = (
+				03DFADFC235C4A2500D891AC /* Models */,
 				03DFADC8235B06E900D891AC /* Extensions */,
 				03DFADBA235AFD6500D891AC /* Views */,
 			);
@@ -169,16 +172,8 @@
 				03DFADE2235C10FB00D891AC /* Test1 */,
 				03DFADDF235C102500D891AC /* TabBar */,
 				03DFADBC235AFDDE00D891AC /* Launch */,
-				03DFADBB235AFDD600D891AC /* AppTop */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		03DFADBB235AFDD600D891AC /* AppTop */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AppTop;
 			sourceTree = "<group>";
 		};
 		03DFADBC235AFDDE00D891AC /* Launch */ = {
@@ -242,6 +237,14 @@
 				03DFADE6235C123700D891AC /* TabAnimations.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		03DFADFC235C4A2500D891AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				03DFADFD235C4C7300D891AC /* UserModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		9827DDFCE97AC8F74506AE8B /* Frameworks */ = {
@@ -438,6 +441,7 @@
 				03D377B8235AD618008759E0 /* AppDelegate.swift in Sources */,
 				03DFADED235C13CD00D891AC /* UIColor+Extended.swift in Sources */,
 				03DFADD8235B711900D891AC /* R.generated.swift in Sources */,
+				03DFADFE235C4C7300D891AC /* UserModel.swift in Sources */,
 				03DFADE7235C123700D891AC /* TabAnimations.swift in Sources */,
 				03DFADFB235C1CAF00D891AC /* Transition.swift in Sources */,
 				03D377BA235AD618008759E0 /* SceneDelegate.swift in Sources */,
