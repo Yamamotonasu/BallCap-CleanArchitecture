@@ -28,9 +28,10 @@ class TabBarController: UITabBarController {
         // UITabBarControllerに配置されているアイコン画像をアニメーションさせる為の処理
         // 現在配置されているUITabBarからUIImageViewを取得して配列にして取得する
         let targetClass: AnyClass = NSClassFromString("UITabBarButton")!
+        // TODO: Animation処理 swift5.1で動作しないので要調査
         let tabBarImageViews = tabBar.subviews
             .filter{ $0.isKind(of: targetClass) }
-            .map{ $0.subviews.first as! UIImageView }
+            .map{ $0.subviews.first! }
         executeBounceAnimationFor(selectedImageView: tabBarImageViews[item.tag])
     }
     
@@ -87,7 +88,7 @@ class TabBarController: UITabBarController {
     
     /// 該当のUIImageViewに対してバウンドするアニメーションを実行する
     /// アニメーション自体は0.16秒間隔で実行され割り込みを許可する
-    private func executeBounceAnimationFor(selectedImageView: UIImageView) {
+    private func executeBounceAnimationFor(selectedImageView: UIView) {
         UIView.animateKeyframes(withDuration: 0.16, delay: 0.0, options: [.allowUserInteraction, .autoreverse], animations: {
 
             // 全体のアニメーション時間の中のどの地点からアニメーションを開始するかを0.0〜1.0の間で指定する
@@ -107,5 +108,18 @@ class TabBarController: UITabBarController {
 // MARK: - TransitionableTab
 
 extension TabBarController: TransitionableTab {
+    
+}
+
+// MARK: - MakeInstance
+
+extension TabBarController {
+    
+    static func makeInstance() -> UITabBarController {
+        guard let tvc = R.storyboard.tabBar.tabBarController() else {
+            return TabBarController()
+        }
+        return tvc
+    }
     
 }

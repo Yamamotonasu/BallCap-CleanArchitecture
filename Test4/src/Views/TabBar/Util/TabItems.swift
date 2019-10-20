@@ -23,7 +23,6 @@ public enum TabBarItems: CaseIterable {
 
     /// get each ViewController
     public func getViewController() -> UIViewController? {
-        var storyboardName: String
         switch self {
         case .testOne:
             return R.storyboard.testOne.instantiateInitialViewController()
@@ -32,8 +31,6 @@ public enum TabBarItems: CaseIterable {
         case .testThree:
             return R.storyboard.testThree.instantiateInitialViewController()
         }
-
-//        return UIStoryboard(name: storyboardName, bundle: nil).instantiateInitialViewController()
     }
 
     // get tab index

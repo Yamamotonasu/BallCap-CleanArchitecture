@@ -6,12 +6,22 @@
 //  Copyright © 2019 山本裕太. All rights reserved.
 //
 
+import Foundation
 import UIKit
 import Firebase
 import Ballcap
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    static var shared: AppDelegate {
+        guard let app = UIApplication.shared.delegate as? AppDelegate else {
+            exit(0)
+        }
+        return app
+    }
+    
+    var window: UIWindow?
 
     override init() {
         super.init()
@@ -19,6 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        Transition.transitionTabBar()
         return true
     }
 
