@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		03D377B8235AD618008759E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D377B7235AD618008759E0 /* AppDelegate.swift */; };
 		03D377BA235AD618008759E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D377B9235AD618008759E0 /* SceneDelegate.swift */; };
-		03D377BC235AD618008759E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D377BB235AD618008759E0 /* ViewController.swift */; };
-		03D377BF235AD618008759E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D377BD235AD618008759E0 /* Main.storyboard */; };
 		03D377C1235AD61B008759E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D377C0235AD61B008759E0 /* Assets.xcassets */; };
 		03D377C4235AD61B008759E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D377C2235AD61B008759E0 /* LaunchScreen.storyboard */; };
 		03D377D8235AFBAE008759E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03D377D7235AFBAE008759E0 /* GoogleService-Info.plist */; };
@@ -24,6 +22,22 @@
 		03DFADCC235B117900D891AC /* NSObject_Rx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFADCB235B117900D891AC /* NSObject_Rx.framework */; };
 		03DFADCD235B117900D891AC /* NSObject_Rx.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFADCB235B117900D891AC /* NSObject_Rx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		03DFADD8235B711900D891AC /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DFADD7235B711900D891AC /* R.generated.swift */; };
+		03DFADDA235C0F7000D891AC /* TransitionableTab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFADD9235C0F7000D891AC /* TransitionableTab.framework */; };
+		03DFADDB235C0F7000D891AC /* TransitionableTab.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFADD9235C0F7000D891AC /* TransitionableTab.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		03DFADDD235C0F8000D891AC /* FontAwesome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFADDC235C0F8000D891AC /* FontAwesome.framework */; };
+		03DFADDE235C0F8000D891AC /* FontAwesome.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03DFADDC235C0F8000D891AC /* FontAwesome.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		03DFADE1235C103C00D891AC /* TabItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DFADE0235C103C00D891AC /* TabItems.swift */; };
+		03DFADE7235C123700D891AC /* TabAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DFADE6235C123700D891AC /* TabAnimations.swift */; };
+		03DFADE9235C12FC00D891AC /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DFADE8235C12FC00D891AC /* TabBar.storyboard */; };
+		03DFADEB235C133700D891AC /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DFADEA235C133700D891AC /* TabBarController.swift */; };
+		03DFADED235C13CD00D891AC /* UIColor+Extended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DFADEC235C13CD00D891AC /* UIColor+Extended.swift */; };
+		03DFADEF235C149E00D891AC /* TestOne.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DFADEE235C149E00D891AC /* TestOne.storyboard */; };
+		03DFADF1235C152C00D891AC /* TestOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DFADF0235C152C00D891AC /* TestOneViewController.swift */; };
+		03DFADF3235C157700D891AC /* TestTwo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DFADF2235C157700D891AC /* TestTwo.storyboard */; };
+		03DFADF5235C159F00D891AC /* TestTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DFADF4235C159F00D891AC /* TestTwoViewController.swift */; };
+		03DFADF7235C15D000D891AC /* TestThree.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DFADF6235C15D000D891AC /* TestThree.storyboard */; };
+		03DFADF9235C160800D891AC /* TestThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DFADF8235C160800D891AC /* TestThreeViewController.swift */; };
+		03DFADFB235C1CAF00D891AC /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DFADFA235C1CAF00D891AC /* Transition.swift */; };
 		B2ED5017E14858AC01864AF3 /* Pods_Test4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CBDC153496D9BA620E24DC /* Pods_Test4.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,10 +48,12 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				03DFADDB235C0F7000D891AC /* TransitionableTab.framework in Embed Frameworks */,
 				03DFADC3235B054D00D891AC /* RxCocoa.framework in Embed Frameworks */,
 				03DFADBF235B053C00D891AC /* RxSwift.framework in Embed Frameworks */,
 				03DFADCD235B117900D891AC /* NSObject_Rx.framework in Embed Frameworks */,
 				03DFADC6235B055B00D891AC /* RxRelay.framework in Embed Frameworks */,
+				03DFADDE235C0F8000D891AC /* FontAwesome.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,8 +64,6 @@
 		03D377B4235AD618008759E0 /* Test4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D377B7235AD618008759E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03D377B9235AD618008759E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		03D377BB235AD618008759E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		03D377BE235AD618008759E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03D377C0235AD61B008759E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03D377C3235AD61B008759E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03D377C5235AD61B008759E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +74,20 @@
 		03DFADC9235B070100D891AC /* UIViewController+Extended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extended.swift"; sourceTree = "<group>"; };
 		03DFADCB235B117900D891AC /* NSObject_Rx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NSObject_Rx.framework; path = Carthage/Build/iOS/NSObject_Rx.framework; sourceTree = "<group>"; };
 		03DFADD7235B711900D891AC /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		03DFADD9235C0F7000D891AC /* TransitionableTab.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TransitionableTab.framework; path = Carthage/Build/iOS/TransitionableTab.framework; sourceTree = "<group>"; };
+		03DFADDC235C0F8000D891AC /* FontAwesome.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FontAwesome.framework; path = Carthage/Build/iOS/FontAwesome.framework; sourceTree = "<group>"; };
+		03DFADE0235C103C00D891AC /* TabItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItems.swift; sourceTree = "<group>"; };
+		03DFADE6235C123700D891AC /* TabAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabAnimations.swift; sourceTree = "<group>"; };
+		03DFADE8235C12FC00D891AC /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		03DFADEA235C133700D891AC /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		03DFADEC235C13CD00D891AC /* UIColor+Extended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extended.swift"; sourceTree = "<group>"; };
+		03DFADEE235C149E00D891AC /* TestOne.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestOne.storyboard; sourceTree = "<group>"; };
+		03DFADF0235C152C00D891AC /* TestOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestOneViewController.swift; sourceTree = "<group>"; };
+		03DFADF2235C157700D891AC /* TestTwo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestTwo.storyboard; sourceTree = "<group>"; };
+		03DFADF4235C159F00D891AC /* TestTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTwoViewController.swift; sourceTree = "<group>"; };
+		03DFADF6235C15D000D891AC /* TestThree.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestThree.storyboard; sourceTree = "<group>"; };
+		03DFADF8235C160800D891AC /* TestThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestThreeViewController.swift; sourceTree = "<group>"; };
+		03DFADFA235C1CAF00D891AC /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 		4738F73DDD6D7AF7903841CC /* Pods-Test4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test4.debug.xcconfig"; path = "Target Support Files/Pods-Test4/Pods-Test4.debug.xcconfig"; sourceTree = "<group>"; };
 		D7CBDC153496D9BA620E24DC /* Pods_Test4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E918870B48680B3F01894297 /* Pods-Test4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test4.release.xcconfig"; path = "Target Support Files/Pods-Test4/Pods-Test4.release.xcconfig"; sourceTree = "<group>"; };
@@ -72,9 +100,11 @@
 			files = (
 				03DFADC5235B055B00D891AC /* RxRelay.framework in Frameworks */,
 				03DFADC2235B054D00D891AC /* RxCocoa.framework in Frameworks */,
+				03DFADDD235C0F8000D891AC /* FontAwesome.framework in Frameworks */,
 				03DFADBE235B053C00D891AC /* RxSwift.framework in Frameworks */,
 				B2ED5017E14858AC01864AF3 /* Pods_Test4.framework in Frameworks */,
 				03DFADCC235B117900D891AC /* NSObject_Rx.framework in Frameworks */,
+				03DFADDA235C0F7000D891AC /* TransitionableTab.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +137,7 @@
 				03D377B7235AD618008759E0 /* AppDelegate.swift */,
 				03D377B9235AD618008759E0 /* SceneDelegate.swift */,
 				03DFADD7235B711900D891AC /* R.generated.swift */,
+				03DFADFA235C1CAF00D891AC /* Transition.swift */,
 				03D377C0235AD61B008759E0 /* Assets.xcassets */,
 				03D377C5235AD61B008759E0 /* Info.plist */,
 			);
@@ -133,6 +164,10 @@
 		03DFADBA235AFD6500D891AC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				03DFADE4235C110800D891AC /* Test3 */,
+				03DFADE3235C110300D891AC /* Test2 */,
+				03DFADE2235C10FB00D891AC /* Test1 */,
+				03DFADDF235C102500D891AC /* TabBar */,
 				03DFADBC235AFDDE00D891AC /* Launch */,
 				03DFADBB235AFDD600D891AC /* AppTop */,
 			);
@@ -142,8 +177,6 @@
 		03DFADBB235AFDD600D891AC /* AppTop */ = {
 			isa = PBXGroup;
 			children = (
-				03D377BD235AD618008759E0 /* Main.storyboard */,
-				03D377BB235AD618008759E0 /* ViewController.swift */,
 			);
 			path = AppTop;
 			sourceTree = "<group>";
@@ -160,13 +193,62 @@
 			isa = PBXGroup;
 			children = (
 				03DFADC9235B070100D891AC /* UIViewController+Extended.swift */,
+				03DFADEC235C13CD00D891AC /* UIColor+Extended.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		03DFADDF235C102500D891AC /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				03DFADE5235C120200D891AC /* Util */,
+				03DFADE8235C12FC00D891AC /* TabBar.storyboard */,
+				03DFADEA235C133700D891AC /* TabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		03DFADE2235C10FB00D891AC /* Test1 */ = {
+			isa = PBXGroup;
+			children = (
+				03DFADEE235C149E00D891AC /* TestOne.storyboard */,
+				03DFADF0235C152C00D891AC /* TestOneViewController.swift */,
+			);
+			path = Test1;
+			sourceTree = "<group>";
+		};
+		03DFADE3235C110300D891AC /* Test2 */ = {
+			isa = PBXGroup;
+			children = (
+				03DFADF2235C157700D891AC /* TestTwo.storyboard */,
+				03DFADF4235C159F00D891AC /* TestTwoViewController.swift */,
+			);
+			path = Test2;
+			sourceTree = "<group>";
+		};
+		03DFADE4235C110800D891AC /* Test3 */ = {
+			isa = PBXGroup;
+			children = (
+				03DFADF6235C15D000D891AC /* TestThree.storyboard */,
+				03DFADF8235C160800D891AC /* TestThreeViewController.swift */,
+			);
+			path = Test3;
+			sourceTree = "<group>";
+		};
+		03DFADE5235C120200D891AC /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				03DFADE0235C103C00D891AC /* TabItems.swift */,
+				03DFADE6235C123700D891AC /* TabAnimations.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		9827DDFCE97AC8F74506AE8B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				03DFADDC235C0F8000D891AC /* FontAwesome.framework */,
+				03DFADD9235C0F7000D891AC /* TransitionableTab.framework */,
 				03DFADCB235B117900D891AC /* NSObject_Rx.framework */,
 				03DFADC4235B055B00D891AC /* RxRelay.framework */,
 				03DFADC1235B054D00D891AC /* RxCocoa.framework */,
@@ -248,10 +330,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03DFADE9235C12FC00D891AC /* TabBar.storyboard in Resources */,
+				03DFADEF235C149E00D891AC /* TestOne.storyboard in Resources */,
+				03DFADF3235C157700D891AC /* TestTwo.storyboard in Resources */,
+				03DFADF7235C15D000D891AC /* TestThree.storyboard in Resources */,
 				03D377C4235AD61B008759E0 /* LaunchScreen.storyboard in Resources */,
 				03D377D8235AFBAE008759E0 /* GoogleService-Info.plist in Resources */,
 				03D377C1235AD61B008759E0 /* Assets.xcassets in Resources */,
-				03D377BF235AD618008759E0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +355,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/NSObject_Rx.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/TransitionableTab.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FontAwesome.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
@@ -346,25 +433,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03D377BC235AD618008759E0 /* ViewController.swift in Sources */,
+				03DFADF1235C152C00D891AC /* TestOneViewController.swift in Sources */,
+				03DFADEB235C133700D891AC /* TabBarController.swift in Sources */,
 				03D377B8235AD618008759E0 /* AppDelegate.swift in Sources */,
+				03DFADED235C13CD00D891AC /* UIColor+Extended.swift in Sources */,
 				03DFADD8235B711900D891AC /* R.generated.swift in Sources */,
+				03DFADE7235C123700D891AC /* TabAnimations.swift in Sources */,
+				03DFADFB235C1CAF00D891AC /* Transition.swift in Sources */,
 				03D377BA235AD618008759E0 /* SceneDelegate.swift in Sources */,
+				03DFADE1235C103C00D891AC /* TabItems.swift in Sources */,
+				03DFADF5235C159F00D891AC /* TestTwoViewController.swift in Sources */,
 				03DFADCA235B070100D891AC /* UIViewController+Extended.swift in Sources */,
+				03DFADF9235C160800D891AC /* TestThreeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		03D377BD235AD618008759E0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				03D377BE235AD618008759E0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		03D377C2235AD61B008759E0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
