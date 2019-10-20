@@ -26,14 +26,14 @@ public enum TabBarItems: CaseIterable {
         var storyboardName: String
         switch self {
         case .testOne:
-            storyboardName = ""
+            return R.storyboard.testOne.instantiateInitialViewController()
         case .testTwo:
-            storyboardName = ""
+            return R.storyboard.testTwo.instantiateInitialViewController()
         case .testThree:
-            storyboardName = ""
+            return R.storyboard.testThree.instantiateInitialViewController()
         }
 
-        return UIStoryboard(name: storyboardName, bundle: nil).instantiateInitialViewController()
+//        return UIStoryboard(name: storyboardName, bundle: nil).instantiateInitialViewController()
     }
 
     // get tab index
