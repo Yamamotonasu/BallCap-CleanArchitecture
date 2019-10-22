@@ -10,11 +10,29 @@ import Foundation
 
 // UserCaseがInterfaceAdapterへ公開するインターフェース
 protocol UsersUseCaseProtocol: AnyObject {
-    // ユーザーを作成する
-    func createUser(name: String?, password: String?)
-    // ユーザーを取得する
-    func fetchUser(identifier: String?)
-
+    // create user
+    func startCreateUser(name: String?, password: String?)
+    // fetch user
+    func startFetchUser(identifier: String?)
 }
+
+protocol UsersGatewayProtocol {
+    func create(name: String?, password: String?, completion: @escaping () -> Void)
+    func fetch(identifier: String?, completion: @escaping () -> Void)
+}
+
+// UseCaseの実装
+final class UsersUseCase: UsersUseCaseProtocol {
+    
+    func startCreateUser(name: String?, password: String?) {
+        // <#code#>
+    }
+    
+    func startFetchUser(identifier: String?) {
+        // <#code#>
+    }
+}
+
+
 
 
