@@ -14,10 +14,52 @@
                     <view key="view" contentMode="scaleToFill" id="7qg-XF-4Ry">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cuz-QW-35P">
+                                <rect key="frame" x="30" y="430" width="354" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="177" translatesAutoresizingMaskIntoConstraints="NO" id="8p6-RR-wyz">
+                                <rect key="frame" x="40" y="486" width="334" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLx-3N-k3r">
+                                        <rect key="frame" x="0.0" y="0.0" width="78.5" height="40"/>
+                                        <state key="normal" title="upButton"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="id3-WN-dND">
+                                        <rect key="frame" x="255.5" y="0.0" width="78.5" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="PcI-70-5hO"/>
+                                        </constraints>
+                                        <state key="normal" title="downButton"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="id3-WN-dND" firstAttribute="width" secondItem="RLx-3N-k3r" secondAttribute="width" id="W6d-Z1-wx9"/>
+                                    <constraint firstItem="id3-WN-dND" firstAttribute="height" secondItem="RLx-3N-k3r" secondAttribute="height" id="WdN-NL-jQK"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Cuz-QW-35P" firstAttribute="centerX" secondItem="7qg-XF-4Ry" secondAttribute="centerX" id="8r1-gg-c10"/>
+                            <constraint firstItem="Cuz-QW-35P" firstAttribute="centerY" secondItem="7qg-XF-4Ry" secondAttribute="centerY" id="DN4-G3-uRQ"/>
+                            <constraint firstItem="jtq-de-iqF" firstAttribute="trailing" secondItem="Cuz-QW-35P" secondAttribute="trailing" constant="30" id="H7C-x4-T0H"/>
+                            <constraint firstItem="8p6-RR-wyz" firstAttribute="top" secondItem="Cuz-QW-35P" secondAttribute="bottom" constant="20" id="L7b-9u-TXp"/>
+                            <constraint firstItem="8p6-RR-wyz" firstAttribute="leading" secondItem="jtq-de-iqF" secondAttribute="leading" constant="40" id="UaQ-Qx-XBx"/>
+                            <constraint firstItem="jtq-de-iqF" firstAttribute="trailing" secondItem="8p6-RR-wyz" secondAttribute="trailing" constant="40" id="q8s-0o-Je8"/>
+                            <constraint firstItem="Cuz-QW-35P" firstAttribute="leading" secondItem="jtq-de-iqF" secondAttribute="leading" constant="30" id="v01-gP-PAy"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="jtq-de-iqF"/>
                     </view>
                     <navigationItem key="navigationItem" id="6NT-GX-w4P"/>
+                    <connections>
+                        <outlet property="countLabel" destination="Cuz-QW-35P" id="YYg-Rx-cib"/>
+                        <outlet property="downButton" destination="id3-WN-dND" id="mbB-Ev-erV"/>
+                        <outlet property="upButton" destination="RLx-3N-k3r" id="MZb-gT-0ny"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8tD-3C-I6B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

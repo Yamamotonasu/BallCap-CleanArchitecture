@@ -10,6 +10,15 @@ import Foundation
 import UIKit
 import Firebase
 import Ballcap
+import ReSwift
+
+// アプリ全体で共通で利用するのでAppDelegateに定義する
+let testStore = Store<TestAppState>(
+    // アプリの利用するreducer
+    reducer: counterReducer,
+    // 初期のstatenil
+    state: nil
+)
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

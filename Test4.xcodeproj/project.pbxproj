@@ -10,6 +10,9 @@
 		037058CE2365D75C003A8CAE /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F786C2236424D4008FC139 /* ReSwift.framework */; };
 		037058D02365D770003A8CAE /* RxOptional.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037058CF2365D770003A8CAE /* RxOptional.framework */; };
 		037058D12365D770003A8CAE /* RxOptional.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 037058CF2365D770003A8CAE /* RxOptional.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		037058D92365D9EA003A8CAE /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037058D82365D9EA003A8CAE /* Action.swift */; };
+		037058DB2365DAB5003A8CAE /* TestAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037058DA2365DAB5003A8CAE /* TestAppState.swift */; };
+		037058DD2365DB58003A8CAE /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037058DC2365DB58003A8CAE /* Reducer.swift */; };
 		03D377B8235AD618008759E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D377B7235AD618008759E0 /* AppDelegate.swift */; };
 		03D377BA235AD618008759E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D377B9235AD618008759E0 /* SceneDelegate.swift */; };
 		03D377C1235AD61B008759E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D377C0235AD61B008759E0 /* Assets.xcassets */; };
@@ -69,6 +72,9 @@
 
 /* Begin PBXFileReference section */
 		037058CF2365D770003A8CAE /* RxOptional.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxOptional.framework; path = Carthage/Build/iOS/RxOptional.framework; sourceTree = "<group>"; };
+		037058D82365D9EA003A8CAE /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		037058DA2365DAB5003A8CAE /* TestAppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppState.swift; sourceTree = "<group>"; };
+		037058DC2365DB58003A8CAE /* Reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
 		03D377B4235AD618008759E0 /* Test4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D377B7235AD618008759E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03D377B9235AD618008759E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +129,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		037058D72365D9CE003A8CAE /* SampleRedux */ = {
+			isa = PBXGroup;
+			children = (
+				037058D82365D9EA003A8CAE /* Action.swift */,
+				037058DA2365DAB5003A8CAE /* TestAppState.swift */,
+				037058DC2365DB58003A8CAE /* Reducer.swift */,
+			);
+			path = SampleRedux;
+			sourceTree = "<group>";
+		};
 		03D377AB235AD618008759E0 = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +192,7 @@
 		03DFADBA235AFD6500D891AC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				037058D72365D9CE003A8CAE /* SampleRedux */,
 				03DFADE4235C110800D891AC /* Test3 */,
 				03DFADE3235C110300D891AC /* Test2 */,
 				03DFADE2235C10FB00D891AC /* Test1 */,
@@ -449,11 +466,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				03DFADF1235C152C00D891AC /* TestOneViewController.swift in Sources */,
+				037058DB2365DAB5003A8CAE /* TestAppState.swift in Sources */,
+				037058D92365D9EA003A8CAE /* Action.swift in Sources */,
 				03DFADEB235C133700D891AC /* TabBarController.swift in Sources */,
 				03D377B8235AD618008759E0 /* AppDelegate.swift in Sources */,
 				03DFADED235C13CD00D891AC /* UIColor+Extended.swift in Sources */,
 				03DFADD8235B711900D891AC /* R.generated.swift in Sources */,
 				03DFADE7235C123700D891AC /* TabAnimations.swift in Sources */,
+				037058DD2365DB58003A8CAE /* Reducer.swift in Sources */,
 				03DFADFB235C1CAF00D891AC /* Transition.swift in Sources */,
 				03D377BA235AD618008759E0 /* SceneDelegate.swift in Sources */,
 				03DFADE1235C103C00D891AC /* TabItems.swift in Sources */,
