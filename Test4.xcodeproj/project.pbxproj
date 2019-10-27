@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		037058CE2365D75C003A8CAE /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F786C2236424D4008FC139 /* ReSwift.framework */; };
+		037058D02365D770003A8CAE /* RxOptional.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037058CF2365D770003A8CAE /* RxOptional.framework */; };
+		037058D12365D770003A8CAE /* RxOptional.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 037058CF2365D770003A8CAE /* RxOptional.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		03D377B8235AD618008759E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D377B7235AD618008759E0 /* AppDelegate.swift */; };
 		03D377BA235AD618008759E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D377B9235AD618008759E0 /* SceneDelegate.swift */; };
 		03D377C1235AD61B008759E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D377C0235AD61B008759E0 /* Assets.xcassets */; };
@@ -38,6 +41,8 @@
 		03DFADF7235C15D000D891AC /* TestThree.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DFADF6235C15D000D891AC /* TestThree.storyboard */; };
 		03DFADF9235C160800D891AC /* TestThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DFADF8235C160800D891AC /* TestThreeViewController.swift */; };
 		03DFADFB235C1CAF00D891AC /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DFADFA235C1CAF00D891AC /* Transition.swift */; };
+		03F786C3236424D4008FC139 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F786C2236424D4008FC139 /* ReSwift.framework */; };
+		03F786C4236424D4008FC139 /* ReSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03F786C2236424D4008FC139 /* ReSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B2ED5017E14858AC01864AF3 /* Pods_Test4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CBDC153496D9BA620E24DC /* Pods_Test4.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +53,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				037058D12365D770003A8CAE /* RxOptional.framework in Embed Frameworks */,
+				03F786C4236424D4008FC139 /* ReSwift.framework in Embed Frameworks */,
 				03DFADDB235C0F7000D891AC /* TransitionableTab.framework in Embed Frameworks */,
 				03DFADC3235B054D00D891AC /* RxCocoa.framework in Embed Frameworks */,
 				03DFADBF235B053C00D891AC /* RxSwift.framework in Embed Frameworks */,
@@ -61,6 +68,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		037058CF2365D770003A8CAE /* RxOptional.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxOptional.framework; path = Carthage/Build/iOS/RxOptional.framework; sourceTree = "<group>"; };
 		03D377B4235AD618008759E0 /* Test4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D377B7235AD618008759E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03D377B9235AD618008759E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +96,7 @@
 		03DFADF6235C15D000D891AC /* TestThree.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestThree.storyboard; sourceTree = "<group>"; };
 		03DFADF8235C160800D891AC /* TestThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestThreeViewController.swift; sourceTree = "<group>"; };
 		03DFADFA235C1CAF00D891AC /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		03F786C2236424D4008FC139 /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
 		4738F73DDD6D7AF7903841CC /* Pods-Test4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test4.debug.xcconfig"; path = "Target Support Files/Pods-Test4/Pods-Test4.debug.xcconfig"; sourceTree = "<group>"; };
 		D7CBDC153496D9BA620E24DC /* Pods_Test4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E918870B48680B3F01894297 /* Pods-Test4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test4.release.xcconfig"; path = "Target Support Files/Pods-Test4/Pods-Test4.release.xcconfig"; sourceTree = "<group>"; };
@@ -98,7 +107,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				037058D02365D770003A8CAE /* RxOptional.framework in Frameworks */,
+				037058CE2365D75C003A8CAE /* ReSwift.framework in Frameworks */,
 				03DFADC5235B055B00D891AC /* RxRelay.framework in Frameworks */,
+				03F786C3236424D4008FC139 /* ReSwift.framework in Frameworks */,
 				03DFADC2235B054D00D891AC /* RxCocoa.framework in Frameworks */,
 				03DFADDD235C0F8000D891AC /* FontAwesome.framework in Frameworks */,
 				03DFADBE235B053C00D891AC /* RxSwift.framework in Frameworks */,
@@ -247,6 +259,8 @@
 		9827DDFCE97AC8F74506AE8B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				037058CF2365D770003A8CAE /* RxOptional.framework */,
+				03F786C2236424D4008FC139 /* ReSwift.framework */,
 				03DFADDC235C0F8000D891AC /* FontAwesome.framework */,
 				03DFADD9235C0F7000D891AC /* TransitionableTab.framework */,
 				03DFADCB235B117900D891AC /* NSObject_Rx.framework */,
@@ -356,7 +370,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/NSObject_Rx.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/TransitionableTab.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/FontAwesome.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxOptional.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
