@@ -12,7 +12,7 @@ import TransitionableTab
 
 /// Mainで表示するTabBarのclass
 class TabBarController: UITabBarController {
-    
+
     private static let selectedTabBarAnimations: MainTabBarAnimations = .move
 
     // MARK: - Override
@@ -22,7 +22,7 @@ class TabBarController: UITabBarController {
         setupMainTabBarInitialSetting()
         setupMainTabBarContents()
     }
-    
+
     /// tabを選択した時に呼ばれる(animation処理等)
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         // UITabBarControllerに配置されているアイコン画像をアニメーションさせる為の処理
@@ -30,22 +30,22 @@ class TabBarController: UITabBarController {
         let targetClass: AnyClass = NSClassFromString("UITabBarButton")!
         // TODO: Animation処理 swift5.1で動作しないので要調査
         let tabBarImageViews = tabBar.subviews
-            .filter{ $0.isKind(of: targetClass) }
-            .map{ $0.subviews.first! }
+            .filter { $0.isKind(of: targetClass) }
+            .map { $0.subviews.first! }
         executeBounceAnimationFor(selectedImageView: tabBarImageViews[item.tag])
     }
-    
+
     // MARK: - Private Functions
-    
+
     /// UITabBarControllerの初期設定に関する調整
     private func setupMainTabBarInitialSetting() {
-        
+
         self.delegate = self
-        
+
         // 初期設定として空のViewControllerを入れておく
         self.viewControllers = [UIViewController(), UIViewController(), UIViewController()]
     }
-    
+
     /// TabBarControllerで表示したい画面に関する設定処理
     private func setupMainTabBarContents() {
         // タブの選択時・非選択時の色とアイコンのサイズを決める
@@ -53,29 +53,29 @@ class TabBarController: UITabBarController {
         let normalColor: UIColor = UIColor(code: "#bcbcbc")
         let selectedColor: UIColor = UIColor(code: "#696969")
         let tabBarItemFont = UIFont(name: "HiraKakuProN-W6", size: 10)!
-        
+
         // TabBar用のAttributeを決める
-        let normalAttributes: [NSAttributedString.Key : Any] = [
+        let normalAttributes: [NSAttributedString.Key: Any] = [
             NSAttributedString.Key.font: tabBarItemFont,
             NSAttributedString.Key.foregroundColor: normalColor
         ]
-        let selectedAttributes: [NSAttributedString.Key : Any] = [
+        let selectedAttributes: [NSAttributedString.Key: Any] = [
             NSAttributedString.Key.font: tabBarItemFont,
             NSAttributedString.Key.foregroundColor: selectedColor
         ]
-        
+
         // TabBarに表示する画面を決める
-        let _ = TabBarItems.allCases.enumerated().map { (index, item) in
-            
+        _ = TabBarItems.allCases.enumerated().map { (index, item) in
+
             // 該当ViewControllerの設置
             guard let vc = item.getViewController() else {
                 fatalError()
             }
             self.viewControllers?[index] = vc
-            
+
             // 該当ViewControllerのタイトル設置
             self.viewControllers?[index].title = item.getTitle()
-            
+
             // 該当ViewControllerのタブバー要素設置
             self.viewControllers?[index].tabBarItem.tag = index
             self.viewControllers?[index].tabBarItem.setTitleTextAttributes(normalAttributes, for: [])
@@ -85,7 +85,7 @@ class TabBarController: UITabBarController {
             self.viewControllers?[index].tabBarItem.selectedImage = UIImage.fontAwesomeIcon(name: item.getFontAwesomIcon(), style: .solid, textColor: selectedColor, size: itemSize).withRenderingMode(.alwaysOriginal)
         }
     }
-    
+
     /// 該当のUIImageViewに対してバウンドするアニメーションを実行する
     /// アニメーション自体は0.16秒間隔で実行され割り込みを許可する
     private func executeBounceAnimationFor(selectedImageView: UIView) {
@@ -108,18 +108,18 @@ class TabBarController: UITabBarController {
 // MARK: - TransitionableTab
 
 extension TabBarController: TransitionableTab {
-    
+
 }
 
 // MARK: - MakeInstance
 
 extension TabBarController {
-    
+
     static func makeInstance() -> UITabBarController {
         guard let tvc = R.storyboard.tabBar.tabBarController() else {
             return TabBarController()
         }
         return tvc
     }
-    
+
 }
