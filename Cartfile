@@ -2,4 +2,4 @@ github "ReactiveX/RxSwift" ~> 5.0
 github "RxSwiftCommunity/NSObject-Rx"
 github "thii/FontAwesome.swift"
 github "Interactive-Studio/TransitionableTab" ~> 0.2.0
-
+github "RxSwiftCommunity/RxDataSources"
