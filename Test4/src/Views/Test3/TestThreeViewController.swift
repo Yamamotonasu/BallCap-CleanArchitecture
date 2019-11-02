@@ -32,6 +32,9 @@ class TestThreeViewController: UIViewController {
     
     @IBOutlet weak var resetButton: UIButton!
     
+    @IBOutlet weak var goWebView: UIButton!
+    
+    
     static let characterLimit: Int = 50
     
     let sampleText = "yaa"
@@ -42,6 +45,10 @@ class TestThreeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViewModel()
+        goWebView.rx.tap.subscribe(onNext: { [weak self] in
+            let vc = WebViewViewController.instance()
+            self?.present(vc, animated: true)
+        }).disposed(by: rx.disposeBag)
     }
     
     private func setupViewModel() {

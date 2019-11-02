@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		037058E023690817003A8CAE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037058DF23690817003A8CAE /* Constants.swift */; };
+		038649D2236DA98B00388A84 /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 038649D1236DA98B00388A84 /* WebView.storyboard */; };
+		038649D4236DAB0600388A84 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038649D3236DAB0600388A84 /* WebViewViewController.swift */; };
+		038649D6236DB20C00388A84 /* RxOptional.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038649D5236DB20C00388A84 /* RxOptional.framework */; };
+		038649D7236DB20C00388A84 /* RxOptional.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 038649D5236DB20C00388A84 /* RxOptional.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		03D377B8235AD618008759E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D377B7235AD618008759E0 /* AppDelegate.swift */; };
 		03D377BA235AD618008759E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D377B9235AD618008759E0 /* SceneDelegate.swift */; };
 		03D377C1235AD61B008759E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D377C0235AD61B008759E0 /* Assets.xcassets */; };
@@ -49,6 +53,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				038649D7236DB20C00388A84 /* RxOptional.framework in Embed Frameworks */,
 				03DFADDB235C0F7000D891AC /* TransitionableTab.framework in Embed Frameworks */,
 				03DFADC3235B054D00D891AC /* RxCocoa.framework in Embed Frameworks */,
 				03DFADBF235B053C00D891AC /* RxSwift.framework in Embed Frameworks */,
@@ -63,6 +68,9 @@
 
 /* Begin PBXFileReference section */
 		037058DF23690817003A8CAE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		038649D1236DA98B00388A84 /* WebView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebView.storyboard; sourceTree = "<group>"; };
+		038649D3236DAB0600388A84 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
+		038649D5236DB20C00388A84 /* RxOptional.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxOptional.framework; path = Carthage/Build/iOS/RxOptional.framework; sourceTree = "<group>"; };
 		03D377B4235AD618008759E0 /* Test4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D377B7235AD618008759E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03D377B9235AD618008759E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				038649D6236DB20C00388A84 /* RxOptional.framework in Frameworks */,
 				03DFADC5235B055B00D891AC /* RxRelay.framework in Frameworks */,
 				03DFADC2235B054D00D891AC /* RxCocoa.framework in Frameworks */,
 				03DFADDD235C0F8000D891AC /* FontAwesome.framework in Frameworks */,
@@ -119,6 +128,15 @@
 				037058DF23690817003A8CAE /* Constants.swift */,
 			);
 			path = Github;
+			sourceTree = "<group>";
+		};
+		038649D0236DA96E00388A84 /* WevView */ = {
+			isa = PBXGroup;
+			children = (
+				038649D1236DA98B00388A84 /* WebView.storyboard */,
+				038649D3236DAB0600388A84 /* WebViewViewController.swift */,
+			);
+			path = WevView;
 			sourceTree = "<group>";
 		};
 		03D377AB235AD618008759E0 = {
@@ -175,6 +193,7 @@
 		03DFADBA235AFD6500D891AC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				038649D0236DA96E00388A84 /* WevView */,
 				03DFADE4235C110800D891AC /* Test3 */,
 				03DFADE3235C110300D891AC /* Test2 */,
 				03DFADE2235C10FB00D891AC /* Test1 */,
@@ -258,6 +277,7 @@
 		9827DDFCE97AC8F74506AE8B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				038649D5236DB20C00388A84 /* RxOptional.framework */,
 				03DFADDC235C0F8000D891AC /* FontAwesome.framework */,
 				03DFADD9235C0F7000D891AC /* TransitionableTab.framework */,
 				03DFADCB235B117900D891AC /* NSObject_Rx.framework */,
@@ -343,6 +363,7 @@
 			files = (
 				03DFADE9235C12FC00D891AC /* TabBar.storyboard in Resources */,
 				03DFADEF235C149E00D891AC /* TestOne.storyboard in Resources */,
+				038649D2236DA98B00388A84 /* WebView.storyboard in Resources */,
 				03DFADF3235C157700D891AC /* TestTwo.storyboard in Resources */,
 				03DFADF7235C15D000D891AC /* TestThree.storyboard in Resources */,
 				03D377C4235AD61B008759E0 /* LaunchScreen.storyboard in Resources */,
@@ -369,6 +390,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/TransitionableTab.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/FontAwesome.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxDataSources.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxOptional.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
@@ -445,6 +467,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				038649D4236DAB0600388A84 /* WebViewViewController.swift in Sources */,
 				03DFADF1235C152C00D891AC /* TestOneViewController.swift in Sources */,
 				03DFADEB235C133700D891AC /* TabBarController.swift in Sources */,
 				03D377B8235AD618008759E0 /* AppDelegate.swift in Sources */,
