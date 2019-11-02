@@ -5,4 +5,4 @@ github "Interactive-Studio/TransitionableTab" ~> 0.2.0
 github "RxSwiftCommunity/RxDataSources"
 github "RxSwiftCommunity/RxOptional"
 github "RxSwiftCommunity/RxAlamofire"
-
+github "pmusolino/PMSuperButton"
