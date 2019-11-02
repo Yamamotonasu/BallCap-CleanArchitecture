@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		034DDECA236DBDA3008241FA /* RxDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034DDEC9236DBDA3008241FA /* RxDataSources.framework */; };
+		034DDECB236DBDA3008241FA /* RxDataSources.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 034DDEC9236DBDA3008241FA /* RxDataSources.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		034DDECD236DBE3D008241FA /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034DDECC236DBE3D008241FA /* Alamofire.framework */; };
+		034DDECE236DBE3D008241FA /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 034DDECC236DBE3D008241FA /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		034DDED0236DC3FF008241FA /* RxAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034DDECF236DC3FF008241FA /* RxAlamofire.framework */; };
+		034DDED1236DC3FF008241FA /* RxAlamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 034DDECF236DC3FF008241FA /* RxAlamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		03D377B8235AD618008759E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D377B7235AD618008759E0 /* AppDelegate.swift */; };
 		03D377BA235AD618008759E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D377B9235AD618008759E0 /* SceneDelegate.swift */; };
 		03D377C1235AD61B008759E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D377C0235AD61B008759E0 /* Assets.xcassets */; };
@@ -51,9 +57,12 @@
 				03DFADDB235C0F7000D891AC /* TransitionableTab.framework in Embed Frameworks */,
 				03DFADC3235B054D00D891AC /* RxCocoa.framework in Embed Frameworks */,
 				03DFADBF235B053C00D891AC /* RxSwift.framework in Embed Frameworks */,
+				034DDECB236DBDA3008241FA /* RxDataSources.framework in Embed Frameworks */,
 				03DFADCD235B117900D891AC /* NSObject_Rx.framework in Embed Frameworks */,
 				03DFADC6235B055B00D891AC /* RxRelay.framework in Embed Frameworks */,
 				03DFADDE235C0F8000D891AC /* FontAwesome.framework in Embed Frameworks */,
+				034DDECE236DBE3D008241FA /* Alamofire.framework in Embed Frameworks */,
+				034DDED1236DC3FF008241FA /* RxAlamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,6 +70,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		034DDEC9236DBDA3008241FA /* RxDataSources.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxDataSources.framework; path = Carthage/Build/iOS/RxDataSources.framework; sourceTree = "<group>"; };
+		034DDECC236DBE3D008241FA /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		034DDECF236DC3FF008241FA /* RxAlamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAlamofire.framework; path = Carthage/Build/iOS/RxAlamofire.framework; sourceTree = "<group>"; };
 		03D377B4235AD618008759E0 /* Test4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D377B7235AD618008759E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03D377B9235AD618008759E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,8 +111,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				03DFADC5235B055B00D891AC /* RxRelay.framework in Frameworks */,
+				034DDED0236DC3FF008241FA /* RxAlamofire.framework in Frameworks */,
+				034DDECD236DBE3D008241FA /* Alamofire.framework in Frameworks */,
 				03DFADC2235B054D00D891AC /* RxCocoa.framework in Frameworks */,
 				03DFADDD235C0F8000D891AC /* FontAwesome.framework in Frameworks */,
+				034DDECA236DBDA3008241FA /* RxDataSources.framework in Frameworks */,
 				03DFADBE235B053C00D891AC /* RxSwift.framework in Frameworks */,
 				B2ED5017E14858AC01864AF3 /* Pods_Test4.framework in Frameworks */,
 				03DFADCC235B117900D891AC /* NSObject_Rx.framework in Frameworks */,
@@ -247,6 +262,9 @@
 		9827DDFCE97AC8F74506AE8B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				034DDECF236DC3FF008241FA /* RxAlamofire.framework */,
+				034DDECC236DBE3D008241FA /* Alamofire.framework */,
+				034DDEC9236DBDA3008241FA /* RxDataSources.framework */,
 				03DFADDC235C0F8000D891AC /* FontAwesome.framework */,
 				03DFADD9235C0F7000D891AC /* TransitionableTab.framework */,
 				03DFADCB235B117900D891AC /* NSObject_Rx.framework */,
@@ -357,6 +375,9 @@
 				"$(SRCROOT)/Carthage/Build/iOS/NSObject_Rx.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/TransitionableTab.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/FontAwesome.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxDataSources.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxAlamofire.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
