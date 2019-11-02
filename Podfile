@@ -13,5 +13,6 @@ target 'Test4' do
   use_frameworks!
   pod 'Ballcap'
   pod 'R.swift', '~> 5.0.0'
+  pod 'Alamofire'
   pod_FirebaseSDK
 end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		037058E023690817003A8CAE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037058DF23690817003A8CAE /* Constants.swift */; };
 		03D377B8235AD618008759E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D377B7235AD618008759E0 /* AppDelegate.swift */; };
 		03D377BA235AD618008759E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D377B9235AD618008759E0 /* SceneDelegate.swift */; };
 		03D377C1235AD61B008759E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D377C0235AD61B008759E0 /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		037058DF23690817003A8CAE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		03D377B4235AD618008759E0 /* Test4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D377B7235AD618008759E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03D377B9235AD618008759E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		037058DE23690705003A8CAE /* Github */ = {
+			isa = PBXGroup;
+			children = (
+				037058DF23690817003A8CAE /* Constants.swift */,
+			);
+			path = Github;
+			sourceTree = "<group>";
+		};
 		03D377AB235AD618008759E0 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +142,7 @@
 		03D377B6235AD618008759E0 /* Test4 */ = {
 			isa = PBXGroup;
 			children = (
+				037058DE23690705003A8CAE /* Github */,
 				03DFADB9235AFD4C00D891AC /* src */,
 				03D377DB235AFC67008759E0 /* SupportingFiles */,
 				03D377B7235AD618008759E0 /* AppDelegate.swift */,
@@ -441,6 +452,7 @@
 				03DFADD8235B711900D891AC /* R.generated.swift in Sources */,
 				03DFADE7235C123700D891AC /* TabAnimations.swift in Sources */,
 				03DFADFB235C1CAF00D891AC /* Transition.swift in Sources */,
+				037058E023690817003A8CAE /* Constants.swift in Sources */,
 				03D377BA235AD618008759E0 /* SceneDelegate.swift in Sources */,
 				03DFADE1235C103C00D891AC /* TabItems.swift in Sources */,
 				03DFADF5235C159F00D891AC /* TestTwoViewController.swift in Sources */,
