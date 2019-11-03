@@ -15,6 +15,8 @@
 		034DDED1236DC3FF008241FA /* RxAlamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 034DDECF236DC3FF008241FA /* RxAlamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		034DDED3236DD278008241FA /* PMSuperButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034DDED2236DD278008241FA /* PMSuperButton.framework */; };
 		034DDED4236DD278008241FA /* PMSuperButton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 034DDED2236DD278008241FA /* PMSuperButton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		034DDEDD236F0B6E008241FA /* Differentiator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034DDEDC236F0B6E008241FA /* Differentiator.framework */; };
+		034DDEDE236F0B6E008241FA /* Differentiator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 034DDEDC236F0B6E008241FA /* Differentiator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		03D377B8235AD618008759E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D377B7235AD618008759E0 /* AppDelegate.swift */; };
 		03D377BA235AD618008759E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D377B9235AD618008759E0 /* SceneDelegate.swift */; };
 		03D377C1235AD61B008759E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D377C0235AD61B008759E0 /* Assets.xcassets */; };
@@ -65,6 +67,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				03DFADDB235C0F7000D891AC /* TransitionableTab.framework in Embed Frameworks */,
+				034DDEDE236F0B6E008241FA /* Differentiator.framework in Embed Frameworks */,
 				03DFADC3235B054D00D891AC /* RxCocoa.framework in Embed Frameworks */,
 				03DFADBF235B053C00D891AC /* RxSwift.framework in Embed Frameworks */,
 				034DDECB236DBDA3008241FA /* RxDataSources.framework in Embed Frameworks */,
@@ -85,6 +88,7 @@
 		034DDECC236DBE3D008241FA /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		034DDECF236DC3FF008241FA /* RxAlamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAlamofire.framework; path = Carthage/Build/iOS/RxAlamofire.framework; sourceTree = "<group>"; };
 		034DDED2236DD278008241FA /* PMSuperButton.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PMSuperButton.framework; path = Carthage/Build/iOS/PMSuperButton.framework; sourceTree = "<group>"; };
+		034DDEDC236F0B6E008241FA /* Differentiator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Differentiator.framework; path = Carthage/Build/iOS/Differentiator.framework; sourceTree = "<group>"; };
 		03D377B4235AD618008759E0 /* Test4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D377B7235AD618008759E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03D377B9235AD618008759E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 				03DFADC2235B054D00D891AC /* RxCocoa.framework in Frameworks */,
 				03DFADDD235C0F8000D891AC /* FontAwesome.framework in Frameworks */,
 				034DDECA236DBDA3008241FA /* RxDataSources.framework in Frameworks */,
+				034DDEDD236F0B6E008241FA /* Differentiator.framework in Frameworks */,
 				03DFADBE235B053C00D891AC /* RxSwift.framework in Frameworks */,
 				B2ED5017E14858AC01864AF3 /* Pods_Test4.framework in Frameworks */,
 				03DFADCC235B117900D891AC /* NSObject_Rx.framework in Frameworks */,
@@ -371,6 +376,7 @@
 		9827DDFCE97AC8F74506AE8B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				034DDEDC236F0B6E008241FA /* Differentiator.framework */,
 				034DDED2236DD278008241FA /* PMSuperButton.framework */,
 				034DDECF236DC3FF008241FA /* RxAlamofire.framework */,
 				034DDECC236DBE3D008241FA /* Alamofire.framework */,
@@ -489,6 +495,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxAlamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/PMSuperButton.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Differentiator.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
