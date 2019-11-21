@@ -10,6 +10,13 @@ import UIKit
 import RxSwift
 import RxCocoa
 import Ballcap
+import Firebase
+
+// remote config stringKey raw value
+enum RemoteConfigKeys: String {
+    case testTextLabel = "test_text_label"
+    case sendingMessageLabel = "sending_message_label"
+}
 
 /**
  * User create scene
@@ -32,6 +39,9 @@ class TestOneViewController: UIViewController {
     @IBOutlet weak var currentUserPassword: UILabel!
     // current user identifier
     @IBOutlet weak var currentUserIdentifier: UILabel!
+    // fetch remote config button
+    @IBOutlet weak var fetchRemoteConfigButton: UIButton!
+    
 
     // MARK: - Variables
 
@@ -39,6 +49,12 @@ class TestOneViewController: UIViewController {
     let userDocument: Document<User> = Document()
     // initialize class to handle tap event
     let tapGesture = UITapGestureRecognizer()
+    
+    let remoteConfig: RemoteConfig = RemoteConfig.remoteConfig()
+    
+    let setting: RemoteConfigSettings = RemoteConfigSettings()
+    
+
     
     /**
      *  document.data?.number -> Optional<Int>
@@ -49,8 +65,13 @@ class TestOneViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetchRemoteConfig()
         addAction()
         subscribeUI()
+        // remote config instance
+        setting.minimumFetchInterval = 0
+        // settingを追加
+        remoteConfig.configSettings = setting
     }
 
 }
@@ -73,6 +94,35 @@ extension TestOneViewController {
         createUserButton.rx.tap.subscribe(onNext: { [unowned self] in
             self.presenter.createUser(name: self.userNameTextField.text, password: self.userNameTextField.text)
         }).disposed(by: rx.disposeBag)
+        
+        fetchRemoteConfigButton.rx.tap.subscribe(onNext: { [weak self] in
+            self?.setTextLabelFromRemoteConfig()
+        }).disposed(by: rx.disposeBag)
+    }
+    
+    /// function to fetch remote config
+    private func fetchRemoteConfig() {
+        remoteConfig.fetch(withExpirationDuration: 20) { [weak self](status, error) -> Void in
+            guard let _self = self else { return }
+            if status == .success {
+                _self.remoteConfig.activate { error in
+                    // if fetching feiled handling..
+                    if let e = error {
+                        print(e)
+                        return
+                    }
+                    print("** fetching success!!")
+                }
+            } else {
+                print("**Config not fetched")
+                print("**Error: \(error?.localizedDescription ?? "no error available")")
+            }
+        }
+    }
+    
+    private func setTextLabelFromRemoteConfig() {
+        currentUserName.text = remoteConfig[RemoteConfigKeys.testTextLabel.rawValue].stringValue
+        currentUserPassword.text = remoteConfig[RemoteConfigKeys.sendingMessageLabel.rawValue].stringValue
     }
 
 }

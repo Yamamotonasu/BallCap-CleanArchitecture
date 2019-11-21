@@ -7,6 +7,7 @@ def pod_FirebaseSDK
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
   pod 'Firebase/Storage'
+  pod 'Firebase/RemoteConfig'
 end
 
 target 'Test4' do

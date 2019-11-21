@@ -139,6 +139,10 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Jk-VL-gCs">
+                                                <rect key="frame" x="100" y="660" width="214" height="30"/>
+                                                <state key="normal" title="RemoteConfigの値を取得する"/>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
@@ -157,8 +161,11 @@
                                             <constraint firstAttribute="trailing" secondItem="zFS-aD-CCY" secondAttribute="trailing" constant="20" id="RKC-sT-yqC"/>
                                             <constraint firstItem="2Eb-Ie-T3Y" firstAttribute="leading" secondItem="tbz-D1-vld" secondAttribute="leading" constant="20" id="SxU-YJ-4cW"/>
                                             <constraint firstAttribute="trailing" secondItem="O6I-Pg-beT" secondAttribute="trailing" constant="20" id="WiG-zf-T5S"/>
+                                            <constraint firstItem="3Jk-VL-gCs" firstAttribute="leading" secondItem="tbz-D1-vld" secondAttribute="leading" constant="100" id="ZOa-RH-7HB"/>
+                                            <constraint firstItem="3Jk-VL-gCs" firstAttribute="top" secondItem="jdR-YR-C2Y" secondAttribute="bottom" constant="30" id="hqF-ss-hTk"/>
                                             <constraint firstItem="jdR-YR-C2Y" firstAttribute="leading" secondItem="tbz-D1-vld" secondAttribute="leading" constant="20" id="ofg-FY-gtl"/>
                                             <constraint firstAttribute="trailing" secondItem="jdR-YR-C2Y" secondAttribute="trailing" constant="20" id="rIq-a8-wmT"/>
+                                            <constraint firstAttribute="trailing" secondItem="3Jk-VL-gCs" secondAttribute="trailing" constant="100" id="sRH-8T-tZR"/>
                                             <constraint firstItem="1Ae-aa-VUk" firstAttribute="leading" secondItem="tbz-D1-vld" secondAttribute="leading" constant="20" id="saO-yh-tLF"/>
                                             <constraint firstItem="nt5-PG-LWC" firstAttribute="leading" secondItem="tbz-D1-vld" secondAttribute="leading" constant="20" id="uX5-fY-eni"/>
                                             <constraint firstItem="ydY-xo-7U7" firstAttribute="leading" secondItem="tbz-D1-vld" secondAttribute="leading" constant="20" id="v04-Fu-1ki"/>
@@ -194,6 +201,7 @@
                         <outlet property="currentUserIdentifier" destination="ptb-ZM-dP6" id="aRc-Yo-oDz"/>
                         <outlet property="currentUserName" destination="lXZ-jA-kqV" id="L8j-ji-k2D"/>
                         <outlet property="currentUserPassword" destination="Kcx-WL-nCW" id="Voq-UV-guH"/>
+                        <outlet property="fetchRemoteConfigButton" destination="3Jk-VL-gCs" id="BFY-7w-0tU"/>
                         <outlet property="passwordTextField" destination="ApY-18-naA" id="tXM-ME-dzN"/>
                         <outlet property="userNameTextField" destination="do1-Df-Pg9" id="IUR-Zd-U9B"/>
                     </connections>
