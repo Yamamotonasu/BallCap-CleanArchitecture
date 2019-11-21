@@ -17,6 +17,7 @@
 		034DDED4236DD278008241FA /* PMSuperButton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 034DDED2236DD278008241FA /* PMSuperButton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		034DDEDD236F0B6E008241FA /* Differentiator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034DDEDC236F0B6E008241FA /* Differentiator.framework */; };
 		034DDEDE236F0B6E008241FA /* Differentiator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 034DDEDC236F0B6E008241FA /* Differentiator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		03998F062386C8C10034E53B /* RemoteConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03998F052386C8C10034E53B /* RemoteConfig.swift */; };
 		03D377B8235AD618008759E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D377B7235AD618008759E0 /* AppDelegate.swift */; };
 		03D377BA235AD618008759E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D377B9235AD618008759E0 /* SceneDelegate.swift */; };
 		03D377C1235AD61B008759E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D377C0235AD61B008759E0 /* Assets.xcassets */; };
@@ -89,6 +90,7 @@
 		034DDECF236DC3FF008241FA /* RxAlamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAlamofire.framework; path = Carthage/Build/iOS/RxAlamofire.framework; sourceTree = "<group>"; };
 		034DDED2236DD278008241FA /* PMSuperButton.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PMSuperButton.framework; path = Carthage/Build/iOS/PMSuperButton.framework; sourceTree = "<group>"; };
 		034DDEDC236F0B6E008241FA /* Differentiator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Differentiator.framework; path = Carthage/Build/iOS/Differentiator.framework; sourceTree = "<group>"; };
+		03998F052386C8C10034E53B /* RemoteConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfig.swift; sourceTree = "<group>"; };
 		03D377B4235AD618008759E0 /* Test4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D377B7235AD618008759E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03D377B9235AD618008759E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +154,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03998F042386C8A80034E53B /* RemoteConfig */ = {
+			isa = PBXGroup;
+			children = (
+				03998F052386C8C10034E53B /* RemoteConfig.swift */,
+			);
+			path = RemoteConfig;
+			sourceTree = "<group>";
+		};
 		03D377AB235AD618008759E0 = {
 			isa = PBXGroup;
 			children = (
@@ -334,6 +344,7 @@
 		03DFAE0D235EF11E00D891AC /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
+				03998F042386C8A80034E53B /* RemoteConfig */,
 				03DFAE12235EF42700D891AC /* Communications */,
 				03DFAE11235EF40F00D891AC /* Gateways */,
 				03DFAE16235EF92A00D891AC /* Result.swift */,
@@ -585,6 +596,7 @@
 				03DFAE00235C5A2000D891AC /* UserAccount.swift in Sources */,
 				03DFAE0A235EE62E00D891AC /* UsersUseCase.swift in Sources */,
 				03DFADE7235C123700D891AC /* TabAnimations.swift in Sources */,
+				03998F062386C8C10034E53B /* RemoteConfig.swift in Sources */,
 				03DFADFB235C1CAF00D891AC /* Transition.swift in Sources */,
 				03D377BA235AD618008759E0 /* SceneDelegate.swift in Sources */,
 				03DFADE1235C103C00D891AC /* TabItems.swift in Sources */,
